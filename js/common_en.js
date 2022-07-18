@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $("#header").load("/html/_0/header.html", function(){
+  $("#header").load("../../html_EN/_0/header.html", function(){
     //이벤트 영역을 넣는다.
     $(window).scroll(function(){
       if ($(window).scrollTop() > 400){
@@ -10,48 +10,48 @@ $(document).ready(function(){
     });
   });
 
-  $("#footer").load("../../html/_0/footer.html", function(){
+  $("#footer").load("../../html_EN/_0/footer.html", function(){
     //이벤트 영역을 넣는다.
   });
 });
 
 function fn_move(link) {
 	if (link == '0') {
-		window.location.href = '../../html/_0/main.html';
+		window.location.href = '../../html_EN/_0/main.html';
 	} else if (link == '1_1') {
-		window.location.href = '../../html/_1/1_History.html';
+		window.location.href = '../../html_EN/_1/1_History.html';
 	} else if (link == '1_2') {
-		window.location.href = '../../html/_1/2_Map.html';
+		window.location.href = '../../html_EN/_1/2_Map.html';
 	} else if (link == '1_3') {
-		window.location.href = '../../html/_1/3_Partners.html';
+		window.location.href = '../../html_EN/_1/3_Partners.html';
 	} else if (link == '1_4') {
-		window.location.href = '../../html/_1/4_BI_CI.html';
+		window.location.href = '../../html_EN/_1/4_BI_CI.html';
 	} else if (link == '1_5') {
-		window.location.href = '../../html/_1/5_Certificate.html';
+		window.location.href = '../../html_EN/_1/5_Certificate.html';
 	} else if (link == '2_1') {
-		window.location.href = '../../html/_2/1_Blockchain.html';
+		window.location.href = '../../html_EN/_2/1_Blockchain.html';
 	} else if (link == '2_2') {
-		window.location.href = '../../html/_2/2_FIDO.html';
+		window.location.href = '../../html_EN/_2/2_FIDO.html';
 	} else if (link == '2_3') {
-		window.location.href = '../../html/_2/3_SWAI.html';
+		window.location.href = '../../html_EN/_2/3_SWAI.html';
 	} else if (link == '2_4') {
-		window.location.href = '../../html/_2/4_Security.html';
+		window.location.href = '../../html_EN/_2/4_Security.html';
 	} else if (link == '2_5') {
-		window.location.href = '../../html/_2/5_SI.html';
+		window.location.href = '../../html_EN/_2/5_SI.html';
 	} else if (link == '3_1') {
-		window.location.href = '../../html/_3/1_Notice.html';
+		window.location.href = '../../html_EN/_3/1_Notice.html';
 	} else if (link == '3_2') {
-		window.location.href = '../../html/_3/2_Tidings.html';
+		window.location.href = '../../html_EN/_3/2_Tidings.html';
 	} else if (link == '3_3') {
-		window.location.href = '../../html/_3/3_Picture.html';
+		window.location.href = '../../html_EN/_3/3_Picture.html';
 	} else if (link == '4') {
-		window.location.href = '../../html/_4/1_Question.html';
+		window.location.href = '../../html_EN/_4/1_Question.html';
 	}
 	//글보기 추가
 	else if (link == '3_1_1') {
-		window.location.href = '../../html/_3/1_1Notice.html';
+		window.location.href = '../../html_EN/_3/1_1Notice.html';
 	} else if (link == '3_2_1') {
-		window.location.href = '../../html/_3/2_1Tidings.html';
+		window.location.href = '../../html_EN/_3/2_1Tidings.html';
 	}
 	//한영변환   window.location.pathname // 파일 경로
 	//5번 한글 페이지로

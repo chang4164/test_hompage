@@ -10,7 +10,7 @@
 #cont1{
   position: relative;
   height: 700px;
-  background-image: url(/img/main6.jpg);
+  background-image: url(../img/main6.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
