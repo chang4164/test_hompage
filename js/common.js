@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $("#header").load("/html/_0/header.html", function(){
+  $("#header").load("../../html/_0/header.html", function(){
     //이벤트 영역을 넣는다.
     $(window).scroll(function(){
       if ($(window).scrollTop() > 400){
@@ -8,6 +8,11 @@ $(document).ready(function(){
         $('header').css({'backgroundColor':'rgba(255,255,255,0.8)', 'box-shadow':'0 3px 5px rgba(0, 0, 0, .3)'});
       }
     });
+
+		$(".navbar-toggler").click(function(){
+			$(".menu").toggleClass("active");
+			$(".language").toggleClass("active");
+		});
   });
 
   $("#footer").load("../../html/_0/footer.html", function(){

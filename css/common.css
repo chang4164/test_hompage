@@ -257,9 +257,7 @@ footer .f-contact img{
   cursor: pointer;
 }
 
-#toggle{
-  color: white;
-  font-size: 40px;
+button.navbar-toggler{
   display: none;
 }
 
@@ -267,17 +265,68 @@ footer .f-contact img{
 
 
 
-@media screen and (min-width: 991px){
+@media screen and (max-width: 991px){
   /*****header*****/
+  button.navbar-toggler{
+    display: block;
+
+  }
+  button.navbar-toggler span{
+    position: relative;
+    width: 22px;
+    height: 2px;
+    margin: 5px 8px;
+    display: block;
+    background-color: #000;
+  }
+  button.navbar-toggler span:last-child{
+    margin-bottom: 0;
+  }
+
+
   
+  .menu{
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    top: 0;
+    right: -100%;
+  }
+  .menu.active{
+    display: flex;
+  }
+  .language.active{
+    display: flex;
+  }
+  .language{
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    top: 0;
+    transition: all 0.3s;
+  }
+
   /*****footer*****/
 
 }
 
-@media screen and (min-width: 768px){
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
   /*****header*****/
 
+
+
+
   /*****footer*****/
+
+
+
 
 }
 
