@@ -269,7 +269,7 @@ button.navbar-toggler{
   /*****header*****/
   button.navbar-toggler{
     display: block;
-
+    z-index: 100000;
   }
   button.navbar-toggler span{
     position: relative;
@@ -286,23 +286,26 @@ button.navbar-toggler{
 
   
   .menu{
-    display: none;
+    display: flex;
     flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    transition: all 0.3s;
+  }
+  .menu.active{
+    right: 0;
+  }
+  .language.active{
+    right: 0;
+  }
+  .language{
+    display: flex;
+    position: absolute;
     background-color: #fff;
     top: 0;
     right: -100%;
-  }
-  .menu.active{
-    display: flex;
-  }
-  .language.active{
-    display: flex;
-  }
-  .language{
-    display: none;
-    flex-direction: column;
-    background-color: #fff;
-    top: 0;
     transition: all 0.3s;
   }
 
